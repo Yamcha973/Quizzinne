@@ -1,0 +1,15 @@
+/**Jessica début Footer**/
+table {
+background-color: #FFAC01;
+padding: 2%;
+width: 100%;
+}
+th :hover{
+color: #FF3601;
+cursor: pointer;
+}
+a {
+text-decoration: none;
+color: black;
+}
+/**Jessica fin Footer**/
