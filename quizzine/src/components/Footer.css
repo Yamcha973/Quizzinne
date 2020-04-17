@@ -20,7 +20,7 @@ cursor: pointer;
 }
 th a {
 font-family: 'Lobster Two', cursive;
-font-size: 25px;
+font-size: 17px;
 
 }
 a {
@@ -32,9 +32,11 @@ color: black;
 th{
 display: flex;
 flex-direction: column;
+
 }
 a {
-    text-align: center;
+text-align: center;
+    
 }
 .icons {
 display: flex;
