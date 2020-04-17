@@ -1,15 +1,45 @@
 /**Jessica début Footer**/
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+
 table {
 background-color: #FFAC01;
 padding: 2%;
 width: 100%;
 }
+th {
+text-align: end;
+}
+.icons {
+display: flex;
+justify-content: center;
+padding-left: 50%;
+}
 th :hover{
 color: #FF3601;
 cursor: pointer;
 }
+th a {
+font-family: 'Lobster Two', cursive;
+font-size: 25px;
+
+}
 a {
 text-decoration: none;
 color: black;
+}
+@media all and (max-width: 768px) {
+
+th{
+display: flex;
+flex-direction: column;
+}
+a {
+    text-align: center;
+}
+.icons {
+display: flex;
+justify-content: center;
+padding-left: 0%;
+}
 }
 /**Jessica fin Footer**/
