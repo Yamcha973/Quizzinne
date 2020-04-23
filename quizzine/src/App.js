@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import FAQ from'./components/FAQ';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FAQ 
+        question="lorem Ipsum"
+        answer= "La réponse a ces questions vous sera apporté dans les plus brefs delais en fonction de la vitesse de creation du site"
+      />
+      <FAQ 
+        question="lorem Ipsum"
+        answer= "La réponse a ces questions vous sera apporté dans les plus brefs delais en fonction de la vitesse de creation du site"
+      />
+      <FAQ 
+        question="lorem Ipsum"
+        answer= "La réponse a ces questions vous sera apporté dans les plus brefs delais en fonction de la vitesse de creation du site"
+      /><FAQ 
+        question="lorem Ipsum"
+        answer= "La réponse a ces questions vous sera apporté dans les plus brefs delais en fonction de la vitesse de creation du site"
+      /><FAQ 
+        question="lorem Ipsum"
+        answer= "La réponse a ces questions vous sera apporté dans les plus brefs delais en fonction de la vitesse de creation du site"
+      /><FAQ 
+        question="lorem Ipsum"
+        answer= "La réponse a ces questions vous sera apporté dans les plus brefs delais en fonction de la vitesse de creation du site"
+      />
+      <button>Contact Us</button>
     </div>
   );
 }
