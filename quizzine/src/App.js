@@ -26,7 +26,6 @@ function App() {
         question="lorem Ipsum"
         answer= "La réponse a ces questions vous sera apporté dans les plus brefs delais en fonction de la vitesse de creation du site"
       />
-      <button>Contact Us</button>
     </div>
   );
 }
