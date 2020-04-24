@@ -33,9 +33,11 @@ color: black;
 th{
 display: flex;
 flex-direction: column;
+
 }
 a {
-    text-align: center;
+text-align: center;
+    
 }
 .icons {
 display: flex;
