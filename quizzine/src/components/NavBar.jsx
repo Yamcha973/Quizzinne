@@ -21,7 +21,7 @@ class NavBar extends React.Component{
                 <li onClick={event => {
                 const newStatus = !this.state.isAuthenticated;
                 this.setState({ isAuthenticated: newStatus });}}
-                 className="authentification">{this.state.isAuthenticated ? "Déconnection" : "Connexion" }</li>                
+                 className="authentification">{this.state.isAuthenticated ? "Déconnexion" : "Connexion" }</li>                
             </ul>
         </div>
         );
