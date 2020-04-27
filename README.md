@@ -6,4 +6,3 @@ couleur 2 :FF3601
 couleur 3 :FFFFFF
 
 Police de caractère:Permanent -Marker (pourle quizz )
-                              -Lobster Two (pour le contenu)
