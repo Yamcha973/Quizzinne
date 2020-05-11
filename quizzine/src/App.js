@@ -1,27 +1,37 @@
 import React from 'react';
 import './App.css';
-import Form  from './components/Form';
+import Form  from './components/Form.js';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar.jsx';
-
-
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import WelcomePage from'./components/WelcomePage.js';
+import Profile from'./components/Profile.js';
+import QuizzStart from'./components/QuizzStart.jsx';
 
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      {/* Si je cliques sur le bouton connexion, alors j'affiche ce composant.
-      event => {
-        const newStatus = !this.state.isAuthenticated;
-        this.setState({
-          isAuthenticated: newStatus
-        });
-      }
-      */}
       
-      <Form />
-      <Footer />
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route path="/form" >
+            <Form />
+          </Route>
+          <Route path="/quizz-start" >
+            <QuizzStart />
+          </Route>
+          <Route path="/profile" >
+            <Profile />
+          </Route>
+          <Route exact path="/" >
+            <WelcomePage />
+          </Route>
+        </Switch>
+      </Router>
+      {/* <Form /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
