@@ -1,6 +1,5 @@
 import React from "react";
 import "./NavBarStyle.css";
-import logo from "./logo.png";
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 
 class NavBar extends React.Component{

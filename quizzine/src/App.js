@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Form  from './components/Form.js';
+import Form  from './components/Login.js';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar.jsx';
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
