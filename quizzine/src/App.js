@@ -30,8 +30,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      {/* <Form /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
