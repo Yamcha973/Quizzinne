@@ -2,12 +2,13 @@
   width: 400px;
   margin: 0 auto;
   text-align: left;
-  height: 80vh;
   margin-top: 15vh;
+  min-height: 80vh;
 }
 
 .FormSubscription h1 {
   text-align: center;
+  margin-bottom: 25px;
 }
 .form-data{
   margin:15px;

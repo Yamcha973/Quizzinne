@@ -1,76 +1,78 @@
-/*body {
-    background-image: url(https://images.assetsdelivery.com/compings_v2/4zevar/4zevar1604/4zevar160400031.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;  
-}*/
-h2 {
-    height: 80vh;
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #F0F0F0;
+    font-family: Courier, monospace;
+    font-style: normal;
+    font-weight: 100;
+    color: #202020;
 }
-/*@media screen and (max-width:768px) {
+.container {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    
+    background-image: url(https://i2.wp.com/www.philjourdren.fr/wp-philjourdren/wp-content/uploads/2019/10/download.png?resize=249%2C203&ssl=1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+h2 {
+    display: block;
+    height: 1.5em;
+    margin: 1.5em 0;
+    color: #606060;
+    line-height: 1.25em;
+}
+/*Animation de la phrase bienvenue*/
+.slogan {
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    width: 0em;
+    height: 1.25em;
+    margin: 1em auto;
+    font-size: 2em;
+    line-height: 1.5em;
+    border-right: .125em solid #39F;
+    box-sizing: content-box;
+    animation-name: blink-start, typing, blink-end;
+    animation-duration: 1s, 1s, 1s;
+    animation-timing-function: linear, steps(13, end), linear;
+    animation-delay: 0s, 1s, 2s;
+    animation-iteration-count: 1, 1, infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.slogan span {
+    display: block;
+    width: 8em;
+}
+
+@keyframes typing {
+    from { width: 0em; }
+    to   { width: 8em; }
+}
+
+@keyframes blink-start {
+    from, to { border-color: #39F; }
+    50% { border-color: transparent; }
+}
+
+@keyframes blink-end {
+    from, to { border-color: #39F; }
+    50% { border-color: transparent; }
+}
+@media screen and (max-width:768px) {
     body {
-    background-image: url(https://images.assetsdelivery.com/compings_v2/4zevar/4zevar1604/4zevar160400031.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     }
     p {
         height: 50vh;
     }
-}*/
-
-* { box-sizing: border-box; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; margin: 0; padding: 0; scrollbar-3dlight-color:rgba(0,0,0,0); }
-
-.container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-around;
-    background-image: url(https://images.assetsdelivery.com/compings_v2/4zevar/4zevar1604/4zevar160400031.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    background-color: #F0F0F0;
-    font-family: Courier, monospace;
-    font-style: normal;
-    font-weight: 100;
-    color: #202020;
-    font-synthesis: antialiased;
-  text-align: center;
-}
-
-.slogan {
-    display: flex;
-    align-items: center;
-    padding: 0%;
-  overflow: hidden; 
-  margin: 0em ;
-  font-size: 2em;
-  border-right: .125em solid #39F;
-  box-sizing: content-box;
-  animation-name: blink-start, typing, blink-end;
-  animation-duration: 1s, 1s, 1s;
-  animation-timing-function: linear, steps(13, end), linear;
-  animation-delay: 0s, 1s, 2s;
-  animation-iteration-count: 1, 1, infinite;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-}
-.slogan h2 {
-    display: block;
-    width: 8em;
-  }
-@keyframes typing {
-  from { width: 0em; }
-  to   { width: 8em; }
-}
-
-@keyframes blink-start {
-  from, to { border-color: #39F; }
-  50% { border-color: transparent; }
-}
-
-@keyframes blink-end {
-  from, to { border-color: #39F; }
-  50% { border-color: transparent; }
 }
