@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import './Timer.css';
 
 class Timer extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            count: 10
+            count: 0
         };
     }
     render() {
@@ -29,7 +30,7 @@ class Timer extends Component {
             }))
         }, 1000);
     }
-    componentWillMount() {
+    componentWillUmount() {
           clearInterval(this.myInterval);
     };
     componentDidUpdate() {

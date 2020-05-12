@@ -30,7 +30,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

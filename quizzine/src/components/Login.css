@@ -3,7 +3,7 @@
   margin: 0 auto;
   text-align: left;
   height: 80vh;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .FormSubscription h1 {
@@ -29,4 +29,8 @@
 
 .FormSubscription .form-data input:not([type="submit"]) {
   flex-grow: 1;
+}
+
+@media screen and (max-width:768px) {
+  
 }
