@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import WelcomePage from'./components/WelcomePage.js';
 import Profile from'./components/Profile.js';
 import QuizzStart from'./components/QuizzStart.jsx';
+import Why from './components/Why';
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
+          <Route path="/why">
+            <Why />
+          </Route>
           <Route path="/form" >
             <Form />
           </Route>

@@ -67,6 +67,28 @@ h2 {
     from, to { border-color: #39F; }
     50% { border-color: transparent; }
 }
+/* Css page why */
+.welcome--why {
+    padding: 2rem;
+    width: 50rem;
+    color: black;
+    text-align: justify;
+    margin: auto;
+    font-weight: bold;
+  }
+  .why {
+    background-image: url("https://media.lesechos.com/api/v1/images/view/5c12ae958fe56f708f174508/1280x720/060340272200-web-tete.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    line-height: 1.8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /* Fin css page why */
+
 @media screen and (max-width:768px) {
     body {
     background-repeat: no-repeat;

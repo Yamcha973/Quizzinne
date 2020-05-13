@@ -8,7 +8,7 @@ const WelcomePage = () => {
       <div class="container">
       </div>
       </div>
-   )
+   );
 }
 
 
