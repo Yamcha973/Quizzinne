@@ -4,11 +4,11 @@ import './FAQ.css';
 function FAQ(props){
     return (
     <div className="FAQ">
-       <div>
-            <h1>
+       <div className="cadrefaq">
+            <h1 className="a.qfaq">
                 {props.question}
             </h1>
-            <p>
+            <p className="rfaq">
                 {props.answer}
             </p>
         </div>

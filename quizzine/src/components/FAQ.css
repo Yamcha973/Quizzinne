@@ -12,3 +12,45 @@ body{
 .FAQB {
     background-color: #FFAC01;
 }
+
+.cadrefaq { 
+padding: 10px;
+margin: 5px;
+color: #87C100; /* couleur du texte */
+background-color: none; /* couleur du fond du cadre */
+border: 1px solid #87C100; /* couleur du cadre */
+/* les lignes qui suivent dessinent l'arrondi des coins */
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-o-border-radius: 5px;
+}
+
+.titrefaq { 
+font-size: 18px; /* taille de la police du titre de la rubrique */
+font-weight: bold; /* titre en gras */
+}
+
+a.qfaq { 
+    display: inline-block; /* ne pas toucher à cette ligne */
+    text-decoration: none; /* enlever le soulignement des liens */
+    padding: 2px 5px; /* marges intérieures */
+    margin: 3px; /* marges extérieures */
+    font-weight: bold; /* écriture en gras de la question */
+    color: #009AFF; /* couleur de la question */
+    border: 1px solid #ccc ; /* bordure autour de la question */
+    background-color: #E4F2FC; /* couleur de fond de la question */
+    /* les lignes qui suivent dessinent l'arrondi du fond de la question, effacez-les pour vous en débarrasser */
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    }
+
+.rfaq {
+padding: 3px;
+margin: 3px;
+color: #999; /* couleur du texte de la réponse */
+border: 0px; /* pas de bordure */
+background-color: none; /* pas de couleur de fond */
+}
