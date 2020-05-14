@@ -11,8 +11,8 @@ class QuizzStart extends Component {
          quizzApi: {},
          score: 0,         
          category: '11',
-         level: 'medium',
-         quantity: 7,
+         level: 'easy',
+         quantity: 3,
          type: "multiple",
          survey: [],
          activePage: "/",         
@@ -74,6 +74,7 @@ class QuizzStart extends Component {
             newArray[i][1][randomNum] = response[i].correct_answer;
             newArray[i][2] = response[i].correct_answer;
             let count = 0;
+            newArray[i][2] = response[i].correct_answer;
             if( i === 0){ newArray[i][3] = true }
          for (let j = 0; j <= response[i].incorrect_answers.length; j++) { 
             if( j !== randomNum ) {

@@ -3,9 +3,9 @@ import '../style/WelcomePage.css';
 
 const WelcomePage = () => {
    return (
-<div>
-  <h2 class="slogan"><span>Bienvenue sur</span></h2>
-      <div class="container">
+<div className="container-welcome-page" >
+  <h2 className="slogan" ><span>Bienvenue sur</span></h2>
+      <div className="container-logo-welcome">
       </div>
       </div>
    );

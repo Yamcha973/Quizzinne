@@ -1,5 +1,12 @@
 
-.container {
+.container-welcome-page{
+    background-color: white;
+    height: 700px;
+    margin: 20px;
+    padding-top: 20px;    
+    border: solid 5px #ffAC01;
+}
+.container-logo-welcome {
     width: 100%;
     height: 500px;
     text-align: center;    
@@ -8,13 +15,11 @@
     background-size: contain;
     background-position: center center;
 }
-
 h2 {
-    display: block;
-    height: 1.5em;
-    margin: 1.5em 0;
     color: #606060;
     line-height: 1.25em;
+    padding: 0;
+    margin: 0;
 }
 /*Animation de la phrase bienvenue*/
 .slogan {
@@ -23,24 +28,25 @@ h2 {
     overflow: hidden; 
     width: 0em;
     height: 1.25em;
-    margin: 1em auto;
+    padding: 0;
+    margin: 4% auto;
     font-size: 2em;
-    line-height: 1.5em;
     border-right: .125em solid #39F;
     box-sizing: content-box;
     animation-name: blink-start, typing, blink-end;
-    animation-duration: 1s, 1s, 1s;
-    animation-timing-function: linear, steps(13, end), linear;
+    animation-duration: 1s, 2s, 1s;
+    animation-timing-function: linear, steps(17, end), linear;
     animation-delay: 0s, 1s, 2s;
     animation-iteration-count: 1, 1, infinite;
     animation-direction: normal;
     animation-fill-mode: forwards;
 }
 
-.slogan span {
-    display: block;
+/* .slogan span { 
     width: 8em;
-}
+    padding: 0;
+    margin: 0;
+} */
 
 @keyframes typing {
     from { width: 0em; }
