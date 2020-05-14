@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const QuestionBox = ({question, options, checkAnswer, setSurvey, correctAnswer }) => {
    const [answers, setAnswers] = useState(options);
    return(
-   <div className="config-quizz-page" >
+   <div className="container-redYellow-box" >
       <div className="red-box" >
          <div className="question-text yellow-box" >{question}</div>
       </div>

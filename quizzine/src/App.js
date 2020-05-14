@@ -22,8 +22,7 @@ class App extends Component {
   }
   render(){
     return (
-      <div className="App">
-        
+      <>        
         <Router>
           <NavBar {...this.state} changeStatus={this.changeStatus} />
           <Switch>
@@ -45,7 +44,7 @@ class App extends Component {
           </Switch>
         </Router>
         <Footer />
-      </div>
+      </>
     );
   }
 }

@@ -48,9 +48,7 @@ class Questions extends Component {
             {(survey.length > 0) && 
             (this.state.count < quantity) &&
             survey.filter(element => element[3] === true).map((element) => 
-            <div>
             <QuestionBox question={element[0]} correctAnswer={element[2]} options={element[1]} key={element[0]} checkAnswer={this.checkAnswer} setSurvey={this.setSurvey}/>
-            </div>
             )}
             { (this.state.count == quantity) && <Result {...this.state} {...this.props} playAgain={this.playAgain} changeActivePage={changeActivePage} /> }
         </>
