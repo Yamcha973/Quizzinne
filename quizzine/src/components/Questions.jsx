@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import QuestionBox from './QuestionBox';
+import Result from './Result.js';
 
 class Questions extends Component {
     constructor(props){
@@ -7,31 +9,51 @@ class Questions extends Component {
             count: 0,
         }
         this.checkAnswer = this.checkAnswer.bind(this);
-        this.changeCount = this.changeCount.bind(this);
+        this.playAgain = this.playAgain.bind(this);
+        this.setSurvey = this.setSurvey.bind(this);
     }
-    
-    checkAnswer(event){
-        const {survey, score, incrementeScore, decrementeScore } = this.props;
-        if ((event.target.id === "answer0") && ( survey[1][2] === 0 )){ incrementeScore(); }
-        else if ((event.target.id === "answer1") && ( survey[1][2] === 1 )){ incrementeScore(); }
-        else if ((event.target.id === "answer2") && ( survey[1][2] === 2 )){ incrementeScore(); }
-        else if ((event.target.id === "answer3") && ( survey[1][2] === 3 )){ incrementeScore(); }
-        else { decrementeScore(); }
-        this.changeCount();
+    componentDidMount(){
+        console.log("comp did Mount questions")
+        const { makeSurvey } = this.props;
+        makeSurvey();
     }
-    changeCount(){
+    playAgain(){ 
+        const { resetScore } = this.props;       
+        this.setState({count: 0})
+        resetScore();
+    }
+    checkAnswer(id, correctAnswer, text){
+        const {survey, count, score, incrementeScore, decrementeScore } = this.props;                
+        if (id === correctAnswer ){ incrementeScore(); this.setState({count: this.state.count + 1}); }        
+        else { this.setState({count: this.state.count + 1}); }
 
-    }
-            
+    } 
+    setSurvey(question){
+        const { survey } = this.props;
+        for (let i = 0 ; i < survey.length ; i++){
+            if ((i === survey.length - 1)&&(survey[i][0] === question) ){
+                survey[i][3] = false
+            }
+            else if(survey[i][0] === question){
+                survey[i][3] = false;
+                survey[i+1][3] = true;
+            }
+        }
+    }       
     render(){
-        const { survey, count, quizzApi, score } = this.props;
+
+        const { survey, quizzApi, score, quantity, changeActivePage } = this.props;
         return(            
-        <div>
-            <p>deroulement des questions</p>
-            <p>{this.props.survey[1][0]}</p>
-            <>{survey[1][1].map( (answer, index) => <button id={`answer${index}`} onClick={(event) => this.checkAnswer(event)}>{answer} </button> )}</>
-            <p>Score: {this.props.score} </p>
-        </div>
+        <>                        
+            {(survey.length > 0) && 
+            (this.state.count < quantity) &&
+            survey.filter(element => element[3] === true).map((element) => 
+            <div>
+            <QuestionBox question={element[0]} correctAnswer={element[2]} options={element[1]} key={element[0]} checkAnswer={this.checkAnswer} setSurvey={this.setSurvey}/>
+            </div>
+            )}
+            { (this.state.count == quantity) && <Result {...this.state} {...this.props} playAgain={this.playAgain} changeActivePage={changeActivePage} /> }
+        </>
         )    
     } 
 }

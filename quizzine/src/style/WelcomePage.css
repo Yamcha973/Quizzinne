@@ -1,19 +1,8 @@
 
-body {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #F0F0F0;
-    font-family: Courier, monospace;
-    font-style: normal;
-    font-weight: 100;
-    color: #202020;
-}
 .container {
     width: 100%;
     height: 500px;
-    text-align: center;
-    
+    text-align: center;    
     background-image: url(https://i2.wp.com/www.philjourdren.fr/wp-philjourdren/wp-content/uploads/2019/10/download.png?resize=249%2C203&ssl=1);
     background-repeat: no-repeat;
     background-size: contain;
@@ -73,8 +62,7 @@ h2 {
     width: 50rem;
     color: black;
     text-align: justify;
-    margin: auto;
-    font-weight: bold;
+    font-weight: 500;
   }
   .why {
     background-image: url("https://media.lesechos.com/api/v1/images/view/5c12ae958fe56f708f174508/1280x720/060340272200-web-tete.jpg");

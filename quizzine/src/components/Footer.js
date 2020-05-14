@@ -1,9 +1,9 @@
 import React from 'react';
-import './Footer.css';
-import {ReactComponent as Facebook} from '../facebook_social_media_icon_127370.svg';
-import {ReactComponent as Instagram} from '../instagram_social_media_icon_127363.svg';
-import {ReactComponent as Twitter} from '../twitter_social_media_icon_127368.svg';
-import {ReactComponent as Youtube} from '../youtube_social_media_icon_127358.svg';
+import '../style/Footer.css';
+import {ReactComponent as Facebook} from '../style/facebook_social_media_icon_127370.svg';
+import {ReactComponent as Instagram} from '../style/instagram_social_media_icon_127363.svg';
+import {ReactComponent as Twitter} from '../style/twitter_social_media_icon_127368.svg';
+import {ReactComponent as Youtube} from '../style/youtube_social_media_icon_127358.svg';
 import { Table } from 'reactstrap';
  
 const Footer = (props) => {
