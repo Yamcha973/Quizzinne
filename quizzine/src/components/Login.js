@@ -27,7 +27,6 @@ class Login extends Component {
         <h1>Formulaire d'inscription</h1>
         </div>
         <form onSubmit={this.submitForm}>
-        <fieldset>
           <div className="yellow-box">
         <legend>Veuillez entrer vos informations ci-dessous :</legend>
         <div className="form-data">
@@ -47,7 +46,6 @@ class Login extends Component {
         <input type="submit" value="Envoyer" />
         </div>
         </div>
-        </fieldset>
         </form>
         </div>
         </div>
