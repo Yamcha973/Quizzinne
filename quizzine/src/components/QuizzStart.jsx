@@ -73,6 +73,7 @@ class QuizzStart extends Component {
             newArray[i] = [response[i].question,[],response[i][1],false];
             newArray[i][1][randomNum] = response[i].correct_answer;
             let count = 0;
+            newArray[i][2] = response[i].correct_answer;
             if( i === 0){ newArray[i][3] = true }
          for (let j = 0; j <= response[i].incorrect_answers.length; j++) { 
             if( j !== randomNum ) {
