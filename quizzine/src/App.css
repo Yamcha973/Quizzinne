@@ -12,4 +12,6 @@ body {
    font-weight: 500;
    color: #202020;
 }
-
+button:hover{
+   cursor: pointer;
+}

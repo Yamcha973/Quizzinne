@@ -7,7 +7,7 @@
    font-weight: 500;
    font-size: 20px;
 }
-.config-quizz-page{
+.container-redYellow-box{
    display: flex;
    align-items: center;
    justify-content: center;
@@ -50,7 +50,7 @@
    font-size: 0.8em;
    padding: 3px;
 }
-/*------- MARK TYPE QUESTION SELECTION---------*/
+/*------- MARK "TYPE QUESTION" SELECTION---------*/
 .radio-input-container{
    display: block;
   position: relative;
@@ -135,9 +135,7 @@ input::-webkit-inner-spin-button {
   -moz-appearance: textfield; */
 /* } */
 /* ------------------------------------------ */
-/* button:hover{
-   cursor: pointer;
-} */
+
 
 @media screen and (max-width: 900px) {
    

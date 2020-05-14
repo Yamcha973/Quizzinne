@@ -19,7 +19,7 @@ class ConfigQuizz extends Component {
    render(){
       const {makeSurvey, changeActivePage, changeCategory, changeLevel, changeQuantity, changeType} = this.props;
       return(
-         <div className=" config-quizz-page " >
+         <div className=" container-redYellow-box " >
             <div className="red-box" >
                <p className="yellow-box" >Selectionnez Vos Préférences:</p>
             </div>
