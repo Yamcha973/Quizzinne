@@ -20,10 +20,15 @@ class Login extends Component {
   
   render() {
     return(
-        <div className="FormSubscription">
+      <>
+      <div className="image">
+      <div className="FormSubscription">
+          <div className="red-box">
         <h1>Formulaire d'inscription</h1>
+        </div>
         <form onSubmit={this.submitForm}>
         <fieldset>
+          <div className="yellow-box">
         <legend>Veuillez entrer vos informations ci-dessous :</legend>
         <div className="form-data">
         <label htmlFor="lastname">Pseudo</label>
@@ -41,9 +46,12 @@ class Login extends Component {
         <div className="form-data">
         <input type="submit" value="Envoyer" />
         </div>
+        </div>
         </fieldset>
         </form>
         </div>
+        </div>
+        </>
     );
         };
 }
