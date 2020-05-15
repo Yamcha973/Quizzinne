@@ -43,7 +43,6 @@ class Login extends Component {
                     <label htmlFor="password">Mot de passe</label>
                     <input type="password" id="password" name="password" onChange={this.inputChange} value={this.state.password} />
                   </div>
-                  {/* <hr /> */}
                   <div className="yellow-box bright-y-box">
                     <input type="submit" value="Envoyer" />
                   </div>
