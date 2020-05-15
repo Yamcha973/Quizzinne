@@ -79,7 +79,7 @@ class ConfigQuizz extends Component {
             </div>
                <div className=" yellow-box bright-y-box">
                   <label htmlFor="quantity-input">Nombre de questions:</label>
-                  <input type="number" id="quantity-input" defaultValue="5" min="2" max="20" onChange={(event) => changeQuantity(event) } />
+                  <input type="number" id="quantity-input" defaultValue="4" min="2" max="20" onChange={(event) => changeQuantity(event) } />
             </div>
             </div>
          <div className="red-box bright-r-box" >
