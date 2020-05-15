@@ -7,6 +7,14 @@
    font-weight: 500;
    font-size: 20px;   
 }
+.main-container.quizzStart-container{
+  background-image: url("https://www.spiritgamer.fr/wp-content/uploads/2019/04/Dragon-Ball-Z-30-ans-image-%C3%A0-la-une-1024x576.jpg") ;
+  background-size: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  height: 200vh;
+  width: 100%;
+}
 .container-redYellow-box{
    display: flex;
    align-items: center;

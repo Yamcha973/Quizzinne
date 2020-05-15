@@ -106,7 +106,7 @@ class QuizzStart extends Component {
       
       return (
          <>
-         <div className="main-container" >{this.displayPage()}</div>
+         <div className="main-container quizzStart-container" >{this.displayPage()}</div>
          </>
       )
    } 
