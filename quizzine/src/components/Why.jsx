@@ -3,16 +3,13 @@ import React, { Component } from 'react';
 const Why = () => {
     return(
     <>
-        <div className="why">
-  </div>
-    <div className="welcome--why">
-  <strong>Lors de votre inscription sur notre site, vous pourrez accéder à une page profil,
-  modifier votre mot de passe, ajouter un avatar.
-  Vous pourrez également faire des duels avec d'autres joueurs, accéder à vos statistiques,
-  et avoir plus de choix au niveau des questions du quizz.
-  Alors qu'est ce que vous attendez ?
-  </strong>
-    </div>
+      <div className="why-container">
+        <div className="why-text">
+            <p>Aprés avoir créer votre compte sur notre application vous pourrez défier d'autres joueurs grace au mode duel en ligne, vous disposerez également d'un profil complet avec votre avatar, le détail de vos statistiques de joueur et vos informations personnelles.</p>
+            <p>En tant que membre vous accèderez également à davantage de fonctionnalités pour créer vos propres quizz's sur mesure.</p>
+            <p>Alors n'attendez plus, devenez membre pour apprendre en vous amusant ou pour réviser vos classiques !</p>
+        </div>
+      </div>
     </>
 );
 }

@@ -1,12 +1,16 @@
 /**Jessica début Footer**/
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
 
-
-table {
-background-color: #FFAC01;
-padding: 2%;
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #FFAC01;
+}
+.footer table{
 width: 100%;
-margin-top: 20px;
 }
 th {
 text-align: end;
@@ -31,7 +35,6 @@ cursor: pointer;
 th a {
 font-family: 'Lobster Two', cursive;
 font-size: 18px;
-
 }
 a {
 text-decoration: none;

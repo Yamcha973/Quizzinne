@@ -8,21 +8,24 @@ import { Table } from 'reactstrap';
  
 const Footer = (props) => {
   return (
-    <Table borderless>
-      <thead>
-        <tr>
-          <th><a href='F.A.Q'>F.A.Q</a></th>
-          <th><a href='Contact'>Contact</a></th>
-          <div className="icons">
-          <th><Instagram /></th>
-          <th><Youtube /></th>
-          <th><Facebook /></th>
-          <th><Twitter /></th>
-          </div>
-          <th><a href='www.Quizzine.com©'>www.Quizzine.com©</a> </th>
-        </tr>
-      </thead>
-    </Table>
+    <div className="footer">
+      <table>
+        <thead>
+          <tr>
+            <th><a href='F.A.Q'>F.A.Q</a></th>
+            <th><a href='Contact'>Contact</a></th>
+            <div className="icons">
+            <th><Instagram /></th>
+            <th><Youtube /></th>
+            <th><Facebook /></th>
+            <th><Twitter /></th>
+            </div>
+            <th><a href='www.Quizzine.com©'>www.Quizzine.com©</a> </th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    
   );
 }
 

@@ -19,12 +19,12 @@ class ConfigQuizz extends Component {
    render(){
       const {makeSurvey, changeActivePage, changeCategory, changeLevel, changeQuantity, changeType} = this.props;
       return(
-         <div className=" container-redYellow-box " >
-            <div className="red-box" >
-               <p className="yellow-box" >Selectionnez Vos Préférences:</p>
+         <div className=" container-redYellow-box bright-cont-ry-box " >
+            <div className="red-box bright-r-box" >
+               <p className="yellow-box bright-y-box" >Selectionnez Vos Préférences:</p>
             </div>
-            <div className="red-box" >            
-               <div className=" yellow-box select-option-box " >
+            <div className="red-box  bright-r-box" >            
+               <div className=" yellow-box select-option-box bright-y-box " >
                   <label >Thème des questions:</label>
                   <select id="category_selection" onChange={(event) => changeCategory(event) } >
                     <option value="">Faites votre choix</option>
@@ -54,7 +54,7 @@ class ConfigQuizz extends Component {
                     <option value="32">Cartoons, Dessins Animés</option>
                   </select>
             </div>
-               <div className=" yellow-box select-option-box ">
+               <div className=" yellow-box select-option-box bright-y-box">
                   <label >Niveaux de difficulté:</label>
                   <select id="level_selection" onChange={(event) => changeLevel(event)}>
                     <option value="">Faites votre choix</option>
@@ -63,7 +63,7 @@ class ConfigQuizz extends Component {
                     <option value="hard">Difficile</option>
                   </select>                   
             </div>
-               <div className=" yellow-box radio-box ">
+               <div className=" yellow-box radio-box bright-y-box">
                   <div>                  
                      <label className="radio-input-container" htmlFor="multiple">Choix multiples
                      <input className="radio-input-input" name="type_select" type="radio" id="multiple"
@@ -77,13 +77,13 @@ class ConfigQuizz extends Component {
                      </label>
                   </div>              
             </div>
-               <div className=" yellow-box ">
+               <div className=" yellow-box bright-y-box">
                   <label htmlFor="quantity-input">Nombre de questions:</label>
                   <input type="number" id="quantity-input" defaultValue="5" min="2" max="20" onChange={(event) => changeQuantity(event) } />
             </div>
             </div>
-         <div className="red-box" >
-            <button className="yellow-box" id="questions" onClick={(event) => {if( this.checkSelectedValue() ) {changeActivePage(event); makeSurvey()}} } >Lancer Quizz</button>          
+         <div className="red-box bright-r-box" >
+            <button className="yellow-box bright-y-box" id="questions" onClick={(event) => {if( this.checkSelectedValue() ) {changeActivePage(event); makeSurvey()}} } >Lancer Quizz</button>          
          </div>
          </div>
       )

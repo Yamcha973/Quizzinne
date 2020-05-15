@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Form  from './components/Login.js';
+import Login  from './components/Login.js';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar.jsx';
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
@@ -30,7 +30,7 @@ class App extends Component {
               <Why />
             </Route> 
             <Route path="/form" >
-              <Form />
+              <Login />
             </Route>
             <Route path="/quizz-start" >
               <QuizzStart />

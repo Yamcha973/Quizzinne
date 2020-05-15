@@ -15,17 +15,21 @@
     background-size: contain;
     background-position: center center;
 }
-h2 {
+/* h2 {    ---- déplacé dans slogan  -----
     color: #606060;
     line-height: 1.25em;
     padding: 0;
     margin: 0;
-}
+} */
 /*Animation de la phrase bienvenue*/
 .slogan {
     position: relative;
     display: block;
     overflow: hidden; 
+    color: #606060;
+    line-height: 1.25em;
+    padding: 0;
+    margin: 0;
     width: 0em;
     height: 1.25em;
     padding: 0;
@@ -63,32 +67,34 @@ h2 {
     50% { border-color: transparent; }
 }
 /* Css page why */
-.welcome--why {
-    padding: 2rem;
-    width: 50rem;
-    color: black;
-    text-align: justify;
-    font-weight: 500;
-  }
-  .why {
+.why-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-right: 5%;
     background-image: url("https://media.lesechos.com/api/v1/images/view/5c12ae958fe56f708f174508/1280x720/060340272200-web-tete.jpg");
     background-attachment: fixed;
     background-size: cover;
-    line-height: 1.8;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  /* Fin css page why */
+    height: 200vh;
+}
+.why-text {
+    width: 50%;   
+    line-height: 1.7;
+    color: rgb(22, 22, 22);    
+}
+.why-text p{
+    font-weight: 600;
+    padding: 20px;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 10px rgb(146, 0, 151);
+}
+
+/* Fin css page why */
 
 @media screen and (max-width:768px) {
     body {
     background-repeat: no-repeat;
     background-size: cover;
-    }
-    p {
-        height: 50vh;
     }
 }
