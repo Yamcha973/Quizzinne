@@ -12,7 +12,7 @@ class QuizzStart extends Component {
          score: 0,         
          category: '11',
          level: 'easy',
-         quantity: 3,
+         quantity: 4,
          type: "multiple",
          survey: [],
          activePage: "/",         
@@ -106,7 +106,7 @@ class QuizzStart extends Component {
       
       return (
          <>
-         <div className="main-container" >{this.displayPage()}</div>
+         <div className="main-container quizzStart-container" >{this.displayPage()}</div>
          </>
       )
    } 
