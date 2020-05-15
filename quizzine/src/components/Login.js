@@ -29,7 +29,7 @@ class Login extends Component {
               <form onSubmit={this.submitForm}>                
                 <div>
                   <div className="yellow-box bright-y-box" >
-                    <h4>Veuillez entrer vos informations ci-dessous :</h4>
+                    <h4>Rentrez vos informations ci-dessous:</h4>
                   </div>                  
                   <div className="yellow-box bright-y-box">
                     <label htmlFor="lastname">Pseudo</label>

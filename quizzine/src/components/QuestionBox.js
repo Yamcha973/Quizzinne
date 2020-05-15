@@ -5,7 +5,7 @@ const QuestionBox = ({question, options, checkAnswer, setSurvey, correctAnswer }
    return(
    <div className="container-redYellow-box bright-cont-ry-box" >
       <div className="red-box  bright-r-box" >
-         <div className="question-text yellow-box bright-y-box" >{question}</div>
+         <div className="question-text yellow-box bright-y-box" >{question.replace(/&quot;/g, '"').replace(/&#039;/g,"'").replace(/&amp;/g, '&')}</div>
       </div>
       <div className="red-box bright-r-box" >
          { answers.map((text, index) => (
