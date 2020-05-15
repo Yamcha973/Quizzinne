@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+
+  .gui-navBar{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;  
+    border: solid 4px #ffAC01;
+  }
+  .gui-navBar ul{
+    display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+    width: 100%;
+    background-color: #FF3601;
+    list-style-type: none;
+  }
+  .gui-navBar li{
+    background-color: #ffAC01;  
+    font-weight: 500; 
+    font-size: 20px; 
+    padding: 10px 14px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 4px rgb(200,200,200);
+    /* box-shadow: 5px 5px 5px rgb(65, 22, 22) ; */
+  }
+  .gui-navBar li:hover{
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 900px) {
+    .gui-navBar li{
+      padding: 7px 10px;
+    }
+   }  
+  @media screen and (max-width: 600px) {
+    .gui-navBar li{
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .gui-navBar li{
+      font-size: 16px;
+    }
+  }
+  
+  

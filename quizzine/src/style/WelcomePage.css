@@ -1,0 +1,100 @@
+
+.container-welcome-page{
+    background-color: white;
+    height: 700px;
+    margin: 20px;
+    padding-top: 20px;    
+    border: solid 5px #ffAC01;
+}
+.container-logo-welcome {
+    width: 100%;
+    height: 500px;
+    text-align: center;    
+    background-image: url(https://i2.wp.com/www.philjourdren.fr/wp-philjourdren/wp-content/uploads/2019/10/download.png?resize=249%2C203&ssl=1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+/* h2 {    ---- déplacé dans slogan  -----
+    color: #606060;
+    line-height: 1.25em;
+    padding: 0;
+    margin: 0;
+} */
+/*Animation de la phrase bienvenue*/
+.slogan {
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    color: #606060;
+    line-height: 1.25em;
+    padding: 0;
+    margin: 0;
+    width: 0em;
+    height: 1.25em;
+    padding: 0;
+    margin: 4% auto;
+    font-size: 2em;
+    border-right: .125em solid #39F;
+    box-sizing: content-box;
+    animation-name: blink-start, typing, blink-end;
+    animation-duration: 1s, 2s, 1s;
+    animation-timing-function: linear, steps(17, end), linear;
+    animation-delay: 0s, 1s, 2s;
+    animation-iteration-count: 1, 1, infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+/* .slogan span { 
+    width: 8em;
+    padding: 0;
+    margin: 0;
+} */
+
+@keyframes typing {
+    from { width: 0em; }
+    to   { width: 8em; }
+}
+
+@keyframes blink-start {
+    from, to { border-color: #39F; }
+    50% { border-color: transparent; }
+}
+
+@keyframes blink-end {
+    from, to { border-color: #39F; }
+    50% { border-color: transparent; }
+}
+/* Css page why */
+.why-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-right: 5%;
+    background-image: url("https://media.lesechos.com/api/v1/images/view/5c12ae958fe56f708f174508/1280x720/060340272200-web-tete.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200vh;
+}
+.why-text {
+    width: 50%;   
+    line-height: 1.7;
+    color: rgb(22, 22, 22);    
+}
+.why-text p{
+    font-weight: 600;
+    padding: 20px;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 10px rgb(146, 0, 151);
+}
+
+/* Fin css page why */
+
+@media screen and (max-width:768px) {
+    body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}

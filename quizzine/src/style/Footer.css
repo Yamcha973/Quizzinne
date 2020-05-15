@@ -1,0 +1,60 @@
+/**Jessica début Footer**/
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #FFAC01;
+}
+.footer table{
+width: 100%;
+}
+th {
+text-align: end;
+}
+.icons {
+display: flex;
+justify-content: center;
+padding-left: 50%;
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+.icons:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+th :hover{
+color: #FF3601;
+cursor: pointer;
+}
+th a {
+font-family: 'Lobster Two', cursive;
+font-size: 18px;
+}
+a {
+text-decoration: none;
+color: black;
+}
+@media all and (max-width: 768px) {
+
+th{
+display: flex;
+flex-direction: column;
+
+}
+a {
+text-align: center;
+    
+}
+.icons {
+display: flex;
+justify-content: center;
+padding-left: 0%;
+}
+}
+/**Jessica fin Footer**/

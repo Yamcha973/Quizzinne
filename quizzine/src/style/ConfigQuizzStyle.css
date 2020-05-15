@@ -1,0 +1,176 @@
+.main-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   font-weight: 500;
+   font-size: 20px;   
+}
+.main-container.quizzStart-container{
+  background-image: url("https://www.spiritgamer.fr/wp-content/uploads/2019/04/Dragon-Ball-Z-30-ans-image-%C3%A0-la-une-1024x576.jpg") ;
+  background-size: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  height: 200vh;
+  width: 100%;
+}
+.container-redYellow-box{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 50%;
+   border: solid 5px#FF3601 ;
+   border-radius: 10px;
+   padding: 0;
+}
+.bright-cont-ry-box{
+  background-color:  #ffAC01;
+}
+.bright-r-box{
+  background-color:  #FF3601;
+}
+.bright-y-box{
+  background-color:  #ffAC01;
+}
+
+.red-box{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   width: 95%;
+   border-radius: 10px;
+   border: solid 4px rgb(200,200,200);
+   padding: 10px;
+   margin: 10px;
+}
+.yellow-box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 85%;
+   padding: 20px;
+   margin: 20px;
+   border: solid 4px rgb(200,200,200);
+   border-radius: 10px;
+   font-size: 1em;
+}
+.select-option-box select{
+   background-color: rgb(220,220,220);
+   border: #FF3601 solid 3px;
+   margin: 5px;
+   font-size: 0.8em;
+   padding: 3px;
+}
+/*------- MARK "TYPE QUESTION" SELECTION---------*/
+.radio-input-container{
+   display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  margin: 8px;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.radio-input-container input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 0;
+   width: 0;
+ } 
+ /* Create a custom checkbox */
+ .radio-input-checkmark {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 24px ;
+   border: #FF3601 solid 3px;
+   width: 24px ;
+   background-color: rgb(210,210,210);
+ } 
+ /* On mouse-over, add a grey background color */
+ /* .radio-input-container:hover input ~ .radio-input-checkmark {
+   background-color: #ccc;
+ }  */
+ /* When the checkbox is checked, add a blue background */
+ .radio-input-container input:checked ~ .radio-input-checkmark {
+   background-color: rgb(235, 235, 235);
+ } 
+ /* Create the checkmark/indicator (hidden when not checked) */
+ .radio-input-checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+ } 
+ /* Show the checkmark when checked */
+ .radio-input-container input:checked ~ .radio-input-checkmark:after {
+   display: block;
+ } 
+ /* Style the checkmark/indicator */
+ .radio-input-container .radio-input-checkmark:after {
+   left: 5px;
+   top: 1px;
+   width: 5px;
+   height: 12px;
+   border: solid rgb(46, 46, 46);
+   border-width: 0 3px 3px 0;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);   
+ }
+/*---- end css mark type question selection--------- */
+
+#quantity-input{
+   text-align: center;
+   width: 17%;
+   padding: 4px;
+   margin-top: 4px;
+   font-size: 1em;
+   background-color: rgb(210,210,210);
+   border: #FF3601 solid 3px;
+}
+/*-----supprime le + et le - sur input type numbert---------------------------*/
+/* Hide Arrows From Input Number */
+/* Chrome, Safari, Edge, Opera */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; */
+/* } */
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield; */
+/* } */
+/* ------------------------------------------ */
+
+
+@media screen and (max-width: 900px) {
+   
+  }
+ @media screen and (max-width: 800px) {
+   
+ }
+ @media screen and (max-width: 720px) {
+   
+ }
+ @media screen and (max-width: 670px) {
+   
+ }
+ 
+ @media screen and (max-width: 600px) {
+   
+ }
+
+ /*
+ 
+   rouge original #FF3601 ;
+   jaune original  #ffAC01;
+ */
